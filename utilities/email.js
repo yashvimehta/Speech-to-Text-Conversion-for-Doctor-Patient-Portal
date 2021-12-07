@@ -7,7 +7,7 @@ module.exports = async function (options) {
         //host: "smtp.gmail.com",
         auth: {
             user: "yashvi.mehta@spit.ac.in",
-            pass: ""
+            pass: "yashaswiyashvi2978"
         }
     });
     let mailDetails = {

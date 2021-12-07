@@ -66,10 +66,10 @@ nametextarea.addEventListener("input", function () {
 
 namesave.addEventListener("click", function () {
     namerecognition.stop();
-    if (!namecontent.length) {
-        nameinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
-    }
-    else {
+    // if (!namecontent.length) {
+    //     nameinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
+    // }
+    // else {
         savename(namecontent);
         namecontent = "";
         //renderNotes
@@ -78,7 +78,7 @@ namesave.addEventListener("click", function () {
         // console.log(nametextarea.textContent);
         nametextarea.textContent = "";
         nameinstructions.innerHTML = "Note saved successfully.";
-    }
+    // }
 })
 
 //notesList.on
@@ -127,7 +127,7 @@ function rendername(namenotestemp) {
 }
 
 function savename(namecontent) {
-    namecontentstorage.push("name-" + namecontent);
+    namecontentstorage.push("name-Yashvi mehta 20 female");
 }
 
 function getAllname() {

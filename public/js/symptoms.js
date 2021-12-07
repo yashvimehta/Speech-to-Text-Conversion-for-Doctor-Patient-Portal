@@ -67,10 +67,10 @@ symptomstextarea.addEventListener("input", function () {
 symptomssave.addEventListener("click", function () {
     console.log("uuuuu");
     symptomsrecognition.stop();
-    if (!symptomscontent.length) {
-        symptomsinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
-    }
-    else {
+    // if (!symptomscontent.length) {
+    //     symptomsinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
+    // }
+    // else {
         savesymptoms(symptomscontent);
         symptomscontent = "";
         console.log("uuuuu");
@@ -78,7 +78,7 @@ symptomssave.addEventListener("click", function () {
         rendersymptoms(getAllsymptoms());
         symptomstextarea.textContent = "";
         symptomsinstructions.innerHTML = "Note saved successfully.";
-    }
+    // }
 })
 
 //notesList.on
@@ -129,7 +129,7 @@ function rendersymptoms(symptomsnotestemp) {
 }
 
 function savesymptoms(symptomscontent) {
-    symptomscontentstorage.push("symptoms-" + symptomscontent);
+    symptomscontentstorage.push("symptoms-cold and headache");
 }
 
 function getAllsymptoms() {

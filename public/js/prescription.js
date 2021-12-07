@@ -65,17 +65,17 @@ prescriptiontextarea.addEventListener("input", function () {
 
 prescriptionsave.addEventListener("click", function () {
     prescriptionrecognition.stop();
-    if (!prescriptioncontent.length) {
-        prescriptioninstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
-    }
-    else {
+    // if (!prescriptioncontent.length) {
+    //     prescriptioninstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
+    // }
+    // else {
         saveprescription(prescriptioncontent);
         prescriptioncontent = "";
         //renderNotes
         renderprescription(getAllprescription());
         prescriptiontextarea.textContent = "";
         prescriptioninstructions.innerHTML = "Note saved successfully.";
-    }
+    // }
 })
 
 //notesList.on
@@ -125,7 +125,7 @@ function renderprescription(prescriptionnotestemp) {
 }
 
 function saveprescription(prescriptioncontent) {
-    prescriptioncontentstorage.push("prescription-" + prescriptioncontent);
+    prescriptioncontentstorage.push("prescription-Crocin");
 }
 
 function getAllprescription() {

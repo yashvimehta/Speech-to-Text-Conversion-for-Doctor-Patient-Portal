@@ -43,8 +43,6 @@ class AuthController{
 							newPerson.save(function(err, Person){
 								if(err)
 									console.log(err);
-								else
-									console.log('Success');
 							});
 						}).sort({_id: -1}).limit(1);
 						res.render("/");

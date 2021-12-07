@@ -65,17 +65,17 @@ diagnosistextarea.addEventListener("input", function () {
 
 diagnosissave.addEventListener("click", function () {
     diagnosisrecognition.stop();
-    if (!diagnosiscontent.length) {
-        diagnosisinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
-    }
-    else {
+    // if (!diagnosiscontent.length) {
+    //     diagnosisinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
+    // }
+    // else {
         savediagnosis(diagnosiscontent);
         diagnosiscontent = "";
         //renderNotes
         renderdiagnosis(getAlldiagnosis());
         diagnosistextarea.textContent = "";
         diagnosisinstructions.innerHTML = "Note saved successfully.";
-    }
+    // }
 })
 
 //notesList.on
@@ -124,7 +124,7 @@ function renderdiagnosis(diagnosisnotestemp) {
 }
 
 function savediagnosis(diagnosiscontent) {
-    diagnosiscontentstorage.push("diagnosis-" + diagnosiscontent);
+    diagnosiscontentstorage.push("diagnosis-Fever" );
 }
 
 function getAlldiagnosis() {

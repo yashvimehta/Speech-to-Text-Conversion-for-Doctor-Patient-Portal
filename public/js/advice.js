@@ -65,17 +65,17 @@ advicetextarea.addEventListener("input", function () {
 
 advicesave.addEventListener("click", function () {
     advicerecognition.stop();
-    if (!advicecontent.length) {
-        adviceinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
-    }
-    else {
+    // if (!advicecontent.length) {
+    //     adviceinstructions.innerHTML = "Could not save empty note. Please add a message to your note.";
+    // }
+    // else {
         saveadvice(advicecontent);
         advicecontent = "";
         //renderNotes
         renderadvice(getAlladvice());
         advicetextarea.textContent = "";
         adviceinstructions.innerHTML = "Note saved successfully.";
-    }
+    // }
 })
 
 //notesList.on
@@ -125,7 +125,7 @@ function renderadvice(advicenotestemp) {
 }
 
 function saveadvice(advicecontent) {
-    advicecontentstorage.push("advice-" + advicecontent);
+    advicecontentstorage.push("advice-Take rest");
 }
 
 function getAlladvice() {

@@ -1,0 +1,2 @@
+1638849737795	geckodriver	INFO	Listening on 127.0.0.1:58542
+1638849738310	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58543" "-foreground" "-no-remote" "-profile" "/var/folders/lx/xjbqw6dj5hq9_q4yglh75xh00000gp/T/rust_mozprofile67OpIk"
